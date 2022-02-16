@@ -14,12 +14,33 @@
         padding: 0 2rem 0 2rem;
     }
 
+    .home{
+        &__logo{
+
+            img{
+                width: 100%;
+                padding-top: 5rem;
+            }
+            
+        }
+
+        &__header--name{
+            padding: 0 2rem 0 2rem;
+            
+        }
+    }
+    
+
     
     
 }
 
 @include media-lg{
-    
+    .home__container{
+        h2{
+            padding: 0 2rem 0 2rem;
+        }
+    }
 }
 
 @include media-sml{
@@ -32,11 +53,27 @@
 
     .footer__container{
 
-        &--link{
+        &--link{    
             ul{
                 display: grid;
                 grid-template-columns: repeat(1,1fr);
             }
+        }
+    }
+
+    .home{
+        &__logo{
+
+            img{
+                width: 100%;
+                padding-top: 5rem;
+            }
+            
+        }
+
+        &__header--name{
+            padding: 0 2rem 0 2rem;
+            
         }
     }
     
